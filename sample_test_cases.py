@@ -26,7 +26,8 @@ class TestLab1(unittest.TestCase):
         tlist = []
         with self.assertRaises(ValueError):  # uses context manager to check exception
             sample.maxlist_rec(tlist)
-        self.assertRaises(ValueError, sample.maxlist_rec, tlist):  # another way to check exception
+        '''tlist = []    
+        self.assertRaises(ValueError, sample.maxlist_rec, tlist):  # another way to check exception'''
 
     def test_reverse_iter(self):
         self.assertEqual(sample.reverse_iter(""),"")
