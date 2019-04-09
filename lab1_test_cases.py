@@ -49,6 +49,10 @@ class TestLab1(unittest.TestCase):
         high = len(list_val)-1
         self.assertEqual(bin_search(9, low, high, list_val), 7 )    # Mid Index below Target
 
+        list_val =[0,1,2,3,4,7,8,9,10]                              
+        low = 2
+        high = 6
+        self.assertEqual(bin_search(3, low, high, list_val), 3 )    # Different Low High Value
 if __name__ == "__main__":
         unittest.main()
 
